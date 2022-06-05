@@ -1,0 +1,110 @@
+//Colors
+@import "colors";
+
+//Universal styling
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+  box-sizing: border-box;
+}
+
+//Styling begins for body
+body {
+  background-color: $Cream;
+
+  //Styling begins for the App
+  .App {
+    overflow: hidden;
+
+    //Styling begins for the Container
+    .container {
+      // background-color: red;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+
+      //Coding for screens size less than 900px
+      @media only screen and (max-width: 900px) {
+        padding: 10px;
+      }
+
+      //Styling begins for the My Balance
+      .mybalance {
+        width: 40%;
+        background-color: $softRed;
+        display: flex;
+        flex-direction: row;
+        padding: 5px 20px;
+        color: white;
+        border-radius: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .mybal {
+          flex: 2;
+          p {
+            padding: 5px 0 5px 0;
+          }
+        }
+
+        //Coding for screens size less than 900px
+        @media only screen and(max-width:900px) {
+          width: 100%;
+        }
+      }
+    }
+
+    //Styling begins for the Chart Div
+    .chartDiv {
+      padding: 20px;
+      border-radius: 20px;
+      background-color: white;
+      color: $Darkbrown;
+      width: 40%;
+
+      .parentContainer {
+        cursor: pointer;
+      }
+
+      //Coding for the screen size less than 900px
+      @media only screen and(max-width :900px) {
+        width: 100%;
+      }
+
+      //Spending at top
+      .spending {
+        h1 {
+          font-size: 25px;
+        }
+        margin: 0 0 20px 0;
+      }
+
+      //Horizontal line
+      hr {
+        margin: 10px;
+        border: 0.5px solid hsl(27, 66%, 92%);
+      }
+
+      //Beneath the bar chart
+      .totalThisMonth {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        .total {
+          flex: 2;
+        }
+        .percentagefromlastmonth {
+          .percentage {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+
+  //*****Styling Ends For App*****
+}

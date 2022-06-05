@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f8e9dd;
+}
+
+body .App {
+  overflow: hidden;
+}
+
+body .App .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  body .App .container {
+    padding: 10px;
+  }
+}
+
+body .App .container .mybalance {
+  width: 40%;
+  background-color: #ec775f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+body .App .container .mybalance .mybal {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body .App .container .mybalance .mybal p {
+  padding: 5px 0 5px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  body .App .container .mybalance {
+    width: 100%;
+  }
+}
+
+body .App .chartDiv {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  color: #382314;
+  width: 40%;
+}
+
+body .App .chartDiv .parentContainer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  body .App .chartDiv {
+    width: 100%;
+  }
+}
+
+body .App .chartDiv .spending {
+  margin: 0 0 20px 0;
+}
+
+body .App .chartDiv .spending h1 {
+  font-size: 25px;
+}
+
+body .App .chartDiv hr {
+  margin: 10px;
+  border: 0.5px solid #f8e9dd;
+}
+
+body .App .chartDiv .totalThisMonth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body .App .chartDiv .totalThisMonth .total {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body .App .chartDiv .totalThisMonth .percentagefromlastmonth .percentage {
+  font-weight: 900;
+}
+/*# sourceMappingURL=styles.css.map */
